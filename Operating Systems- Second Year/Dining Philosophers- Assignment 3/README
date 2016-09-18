@@ -1,0 +1,36 @@
+//************************** CIS*3110- ASSIGNMENT 3 ***********************************//
+//
+//  Name:       Reem Razak
+//  ID:         0851987
+//************************************************************************************//
+
+/******** DISCUSSION *********************************************/
+
+In my program two queues are used, one which represents the processes that will be loaded into the memory, and another which represents the memory itself.
+While the user doesn’t choose the exit, the program will call the allocation algorithm functions with the Queues. lapoop, when first fit is selected, the program cycles through a while loop until the process list is null (or empty). For each process it checks for available space, if none is found, the oldest process in the memory queue is removed and put back into the process list.
+
+
+/******* CITATIONS ***********************************************/
+
+
+The following website was used as a reference:
+http://www.cprogramming.com/snippets/source-code/priority-queue-with-linked-list
+
+
+/******* RUNNING THE PROGRAM ***********************************************/
+
+To compile the shell enter one the following commands:
+
+	make
+To run the philosophers (example)
+	./dine <num of phils> <num eats>
+To run the memory management
+	./holes <name of file>
+
+*Note you must include an input file
+
+/******* KNOWN LIMITATIONS ***********************************************/
+
+Program may segfault
+
+
