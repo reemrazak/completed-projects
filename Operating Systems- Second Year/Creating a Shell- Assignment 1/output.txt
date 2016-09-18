@@ -1,0 +1,17 @@
+total 336
+drwx------@ 16 Reem  staff    544 25 Feb 14:00 .
+drwxr-xr-x   5 Reem  staff    170 26 Jan 20:57 ..
+-rw-r--r--@  1 Reem  staff   6148 28 Jan 01:32 .DS_Store
+-rwxr-xr-x@  1 Reem  staff    245 27 Jan 22:49 Makefile
+-rw-r--r--   1 Reem  staff   3083 30 Jan 18:35 README
+-rwxr-xr-x   1 Reem  staff   8764 30 Jan 03:31 a.out
+-rw-r--r--   1 Reem  staff    280 28 Jan 20:13 addTest.c
+-rwxr-xr-x@  1 Reem  staff    402 27 Jan 23:11 lex.c
+-rw-r--r--   1 Reem  staff  44392 27 Jan 23:13 lex.yy.c
+-rw-r--r--   1 Reem  staff  32520 27 Jan 23:13 lex.yy.o
+-rwxr-xr-x   1 Reem  staff  29392 25 Feb 13:57 msh
+-rwxr-xr-x@  1 Reem  staff   8010 30 Jan 19:34 mshell.c
+-rw-r--r--   1 Reem  staff  11136 25 Feb 13:57 mshell.o
+-rw-r--r--   1 Reem  staff      0 25 Feb 14:00 output.txt
+-rw-r--r--   1 Reem  staff   1180 30 Jan 03:18 pipe.c
+-rw-r--r--   1 Reem  staff      0 30 Jan 19:34 test.c

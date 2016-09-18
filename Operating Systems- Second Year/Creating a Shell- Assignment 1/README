@@ -1,0 +1,68 @@
+//************************** CIS*3110- ASSIGNMENT 1 ***********************************//
+//
+//  Name:       Reem Razak
+//  ID:         0851987
+//************************************************************************************//
+
+/******** BRIEF REPORT*********************************************/
+The general algorithm of my program is as follows:
+
+The shell will loop infinitely unless a call to exit is made. For each loop, a line of input is entered by the user and parsed by the getln() function in lex.c into a double char *  array of arguments called "args". After appropriating input from the user, the next step is to loop through args and check for any specific flags which would result in different actions needed to be taken by the program. For example if the redirection symbol "<" is detected, the inputFlag will be set and the name of the file to redirect will be stored. After setting any needed flags, the program then checks for any commands that cannot be called by execvp but are still definied in the shell (exit, add, args, extra commands). If found, appropriate functions are called. Else, the command execute function is called. This function takes care of piping, forking, as well as calling the execvp commands
+
+
+/******* CITATIONS ***********************************************/
+
+The parsing file "lex.c" that was provided by the TA's on the moodle is used in this assignment.
+
+The following website was used as a reference:
+http://people.cs.pitt.edu/~khalifa/cs1550/sum06/Assignments/Assign1/assignment1.htm
+
+The following website was used to gain information on piping:
+http://www.cs.loyola.edu/~jglenn/702/S2005/Examples/dup2.html
+
+
+
+/******* RUNNING THE PROGRAM ***********************************************/
+
+To compile the shell enter one the following commands:
+
+	make
+
+To run the shell (example)
+	./msh
+
+
+/******* KNOWN LIMITATIONS ***********************************************/
+
+This shell will only except one pipe per command. More than one pipe will just result in an error
+
+/*************  FILE INFORMATION ***************************************/
+
+mshell.c:	contains the main function, as well as functions that work to execute various shell commands/input
+lex.c:		contains a parser that parses the line input from the user
+
+
+
+/*************  EXTRA COMMANDS (PART 2) Q. 3) ***************************************/
+
+******** COMMAND ONE: findKIllersIP ***********
+// If you want to have a good laugh, check out this video
+https://www.youtube.com/watch?v=hkDD03yeLnU
+
+and then enter the command "findKillersIP" into my shell
+NOTE** The program does not actually seg fault, it just printfs ("Segmentation fault") and you can continue running the shell
+
+******** COMMAND TWO: pig ************
+pretty simplified version of pig latin,
+takes the first letter of a word, adds it to the end, then adds "ay"
+For example:
+
+input:	pig CIS3110 is the best badass subject ever
+
+output:	IS3110Cay siay hetay estbay adassbay ubjectsay vereay 
+
+
+
+******************************************************************
+*********************************
+
