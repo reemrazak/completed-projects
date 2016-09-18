@@ -1,0 +1,48 @@
+//************************** CIS*3110- ASSIGNMENT 1 ***********************************//
+//
+//  Name:       Reem Razak
+//  ID:         0851987
+//************************************************************************************//
+
+/******** DISCUSSION *********************************************/
+
+In my program, overhead is used when switching between threads during the simulation.
+If the CPU switches from a thread in one process to a thread in another, the process switch time is added to the total timer. If the CPU switches from one thread to another thread within the same process, the the thread switch time is added to the total timer. My program does not switch overhead for the first state in the scheduler, as no thread was scheduled before that and I would not classify it as a switch. My program does not currently implement round robin, but if I got a chance to further modify it I would include switch overhead if a thread is interrupted due to a time slice.
+
+
+/******* CITATIONS ***********************************************/
+
+
+The following website was used as a reference:
+http://www.cprogramming.com/snippets/source-code/priority-queue-with-linked-list
+
+
+/******* RUNNING THE PROGRAM ***********************************************/
+
+To compile the shell enter one the following commands:
+
+	make
+	make all
+	make simcpu
+
+To run the simulator (example)
+	./simcpu -flags < inputFile
+
+*Note you must include an input file
+
+/******* KNOWN LIMITATIONS ***********************************************/
+
+Round robin is currently not implemented
+
+/*************  FILE INFORMATION ***************************************/
+
+a2.c:	contains the main function
+a2.h:	header file for main
+List.c:	contains all the functions that make use of the Linked list and Queue data 					structures
+List.h:	header file for List.c
+Makefile
+
+
+******************************************************************
+*********************************
+
